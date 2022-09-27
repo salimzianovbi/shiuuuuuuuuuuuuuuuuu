@@ -1,0 +1,22 @@
+n = str(input())
+j=0
+c = ""
+m=""
+k=0
+for i in range (10):
+    c+=str(i)
+while k < len(n):
+    d = k
+    if c.find(n[d]) != -1:
+        while c.find(n[d]) != -1:
+            m+=n[d]
+            d+=1
+            k+=1
+
+    else:
+        k+=1
+
+    if m != "":
+        b.append(m)
+    m = ""
+print(b)
