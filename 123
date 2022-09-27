@@ -1,18 +1,22 @@
 n = str(input())
+b=[]
 j=0
 c = ""
 m=""
 k=0
-b=[]
+z=1
 for i in range (10):
     c+=str(i)
 while k < len(n):
     d = k
-    if c.find(n[d]) != -1:
+    if c.find(n[d]) != -1 :
         while c.find(n[d]) != -1:
+
             m+=n[d]
+            k += 1
+            if d == (len(n) - 1):
+                break
             d+=1
-            k+=1
 
     else:
         k+=1
@@ -20,4 +24,8 @@ while k < len(n):
     if m != "":
         b.append(m)
     m = ""
-print(b)
+
+
+for i in range (len(b)):
+    z*=int(b[i])
+print(z)
