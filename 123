@@ -3,6 +3,7 @@ j=0
 c = ""
 m=""
 k=0
+b=[]
 for i in range (10):
     c+=str(i)
 while k < len(n):
